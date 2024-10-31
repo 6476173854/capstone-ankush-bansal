@@ -1,18 +1,3 @@
-Layout
-Desktop View: The desktop layout includes a [brief description, e.g., "navigation bar, hero section, and grid layout for content"]. This structure allows for easy access to key features.
-Responsive Design: The design was created with mobile-first principles, ensuring that all elements resize and rearrange effectively for smaller screens. Important actions remain easily accessible.
-
-User Actions
-Navigation: A clear and intuitive navigation menu was implemented at the top of the layout to facilitate user movement throughout the site.
-
-Buttons: Call-to-action buttons are prominent and use contrasting colors to draw attention, encouraging user interaction.
-
-Forms: Input fields and buttons are designed for usability, ensuring that users can easily submit their information.
-
-Challenges and Solutions
-
-Challenge: Balancing aesthetics and usability.
-Solution: User testing was conducted on early mockups to gather feedback, leading to adjustments in color contrasts and button sizes for better accessibility.
-
-Challenge: Designing for multiple screen sizes.
-Solution: I used a grid system that adapts to different screen sizes, ensuring a consistent experience across devices.
+Name - Ankush bansal
+Student number 041129933
+i made this website while using html and css and a little bit part of css. first i created 3 file html,css and js to make my website responsive.it took a lot of time and sometime a i felt i tierd also. in html i created homne page design included date title  and submit options. and favourite button will help to add pictures in favorite sections. overall it was good after completed.
