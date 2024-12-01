@@ -1,0 +1,64 @@
+Name - Ankush bansal
+Student number 041129933
+
+
+
+Usage
+View APOD by Date:
+
+Enter a valid date (in YYYY-MM-DD format) in the date input field.
+Click "Submit" to view the Astronomy Picture of the Day for that date, along with its title and explanation.
+Save to Favourites:
+
+After viewing the APOD, click the "Save to Favourites" button to save the current APOD to your favourites list.
+Saved favourites are stored in your browser's local storage and will persist across sessions.
+View Favourites:
+
+The saved favourites will be displayed in the "Favourites" section of the page.
+Each favourite shows the image, title, and date, along with a "Delete" button to remove it from your favourites list.
+Delete from Favourites:
+
+Click the "Delete" button on any favourite to remove it from the list and update the local storage.
+Code Explanation
+Event Listener for Form Submission:
+
+The form listens for a submit event. When the user submits the form with a valid date, the app fetches data from NASA's APOD API and displays it.
+Fetch APOD Data:
+
+The fetchApodData() function sends a request to the NASA API and retrieves the APOD data for the provided date.
+Display APOD:
+
+The displayApod() function takes the API response and displays the APOD's image, title, explanation, and date on the page.
+Save to Favourites:
+
+When the user clicks "Save to Favourites," the saveToFavourites() function adds the current APOD to the browser's local storage, ensuring it persists.
+Delete from Favourites:
+
+The deleteFavourite() function removes an APOD from the favourites list stored in local storage.
+Display Favourites:
+
+The displayFavourites() function dynamically updates the "Favourites" section of the page to show all saved favourites.
+
+
+
+Problems and Challenges
+
+While building this project, there are several potential challenges and problems that you may encounter, ranging from technical limitations to user experience considerations. Here are some common problems you may face:
+
+1. API Rate Limiting
+Problem:
+NASA’s API (like many public APIs) may have rate limits, meaning you can only make a certain number of requests per minute or day. If you exceed this limit, you might encounter errors or be temporarily blocked from making further requests.
+
+Solution:
+
+To avoid hitting the rate limit, make sure to use the API key wisely.
+Implement error handling in your code to gracefully inform the user when the API is unreachable or rate-limited.
+Consider caching the results locally (for example, saving them in localStorage) to avoid multiple requests for the same date.
+2. Invalid or Missing API Data
+Problem:
+The API might sometimes return unexpected or incomplete data (for instance, an error message or missing image for a specific date). Users might see blank spaces or broken images on the page if the expected data isn't returned.
+
+Solution:
+
+Implement proper error handling to handle cases where the data is missing or malformed. You could show a user-friendly error message when the data isn't available.
+Check for missing properties (e.g., url, title, explanation) in the API response and display default fallback content when necessary.
