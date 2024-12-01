@@ -152,7 +152,17 @@ body {
     max-width: 600px;
     margin: 0 auto;
 }
+.favourites-section img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
+}
 
+
+ 
 
 footer {
     background-color: rgba(255, 255, 255, 0.9); 
